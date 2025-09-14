@@ -1,11 +1,13 @@
 apiVersion: v2
 name: cloudflare-dyndns
-version: 1.0.0
-description: Helm chart providing the cloudflare-dyndns service to automatically set cloudflare records to the current IPv4 address.
+version: 1.1.0
+description: >-
+  Helm chart providing the cloudflare-dyndns service to automatically set
+  cloudflare records to the current IPv4 address.
 home: https://msueberkrueb.github.io/cloudflare-dyndns/
 sources:
   - https://github.com/msueberkrueb/cloudflare-dyndns
 maintainers:
   - name: msueberkrueb
 annotations:
-  artifacthub.io/category: "networking"
+  artifacthub.io/category: networking
