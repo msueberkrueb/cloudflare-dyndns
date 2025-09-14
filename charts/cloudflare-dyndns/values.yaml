@@ -1,0 +1,11 @@
+image: ghcr.io/msueberkrueb/cloudflare-dyndns
+tag: 1.0.0
+
+schedule: "*/1 * * * *"
+
+config:
+  api_token:
+  zone_id:
+  ttl: 60
+  comment: Managed by CloudFlare DynDNS
+  records:

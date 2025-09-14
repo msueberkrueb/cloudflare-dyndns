@@ -1,0 +1,26 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  schedule: "{{ .Values.schedule }}"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          volumes:
+            - name: cloudflare-dyndns-config
+              secret:
+                secretName: "{{ .Release.Name }}-config"
+          containers:
+            - name: cloudflare-dyndns
+              image: "{{ .Values.image }}:{{ .Values.tag }}"
+              env:
+                - name: CLOUDFLARE_DYNDNS_CONFIG_PATH
+                  value: /usr/local/etc/cloudflare-dyndns-config/.cloudflare-dyndns-config
+              volumeMounts:
+                - name: cloudflare-dyndns-config
+                  readOnly: true
+                  mountPath: /usr/local/etc/cloudflare-dyndns-config
