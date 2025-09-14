@@ -3,7 +3,7 @@ module github.com/msueberkrueb/cloudflare-dyndns
 go 1.24.5
 
 require (
-	github.com/cloudflare/cloudflare-go/v5 v5.0.0
+	github.com/cloudflare/cloudflare-go/v5 v5.1.0
 	sigs.k8s.io/yaml v1.6.0
 )
 
