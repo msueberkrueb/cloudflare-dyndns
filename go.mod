@@ -4,7 +4,7 @@ go 1.24.5
 
 require (
 	github.com/cloudflare/cloudflare-go/v5 v5.1.0
-	github.com/cloudflare/cloudflare-go/v7 v7.12.0
+	github.com/cloudflare/cloudflare-go/v7 v7.13.0
 	sigs.k8s.io/yaml v1.6.0
 )
 
