@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/msueberkrueb/cloudflare-dyndns/compare/v1.1.4...v1.1.5) (2026-11-13)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/cloudflare/cloudflare-go/v7 to v7.15.0 ([406ea81](https://github.com/msueberkrueb/cloudflare-dyndns/commit/406ea81629ada25a0d277cda4a16c9dc414db2b5))
+
 ## [1.1.4](https://github.com/msueberkrueb/cloudflare-dyndns/compare/v1.1.3...v1.1.4) (2026-10-21)
 
 
